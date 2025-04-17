@@ -1,13 +1,730 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* TABLE ------------------------------------------------ */
+a {
+  color: rgb(0, 229, 255);
+}
+footer {
+  font-family: monospace;
+  color: rgb(0, 229, 255);
+  position: absolute;
+  left: 1%;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5em;
+}
+/* TABLE------------------------------------------------ */
+
+
+/* TERMINAL WINDOW ------------------------------------------------ */
+
+/* CONTENT ----------------------------------- */
+
+#fake__Screen:-ms-fullscreen p {
+  visibility: visible;
+  font-size: 2.0em;
+  overflow: auto;
+}
+#fake__Screen:fullscreen {
+  font-size: 2.0em;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+span {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+  font-size: 1.5em;
+  display: inline-flex;
 }
+a {
+  color: rgb(0, 229, 255);
+  font-family: monospace;
+  text-align: left;
+}
+.codeHead {
+  color: rgb(0, 229, 255);
+  font-family: monospace;
+  text-align: left;
+  font-size: 1.5em;
+  display: inline-flex;
+}
+#content {
+  width: fit-content;
+}
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .7em solid rgb(0, 229, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: -10 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  -webkit-animation: 
+    typing 2.5s steps(35, end),
+    blink-caret .5s step-end infinite;
+  animation: 
+    typing 2.5s steps(35, end),
+    blink-caret .9s step-end infinite;
+}
+.typewriter1 {
+  width: fit-content;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .7em solid rgb(0, 229, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: -10 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  -webkit-animation: 
+    typingOne 1s steps(60, end),
+    blink-caret .5s step-end infinite;
+  animation: 
+    typingOne 1s steps(60, end),
+    blink-caret .9s step-end infinite;
+}
+.bio:hover {
+  color: rgb(0, 229, 255);
+}
+.work:hover {
+  color: rgb(0, 229, 255);
+}
+.projects:hover {
+  color: rgb(0, 229, 255);
+}
+/* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+/* The typing1 effect */
+@-webkit-keyframes typingOne {
+  from { width: 0 }
+  to { width: 20% }
+}
+@keyframes typingOne {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 238, 255) }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 208, 255) }
+}
+
+#id {
+  overflow-y:auto;
+}
+/* CONTENT ----------------------------------- */
+
+body {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 100px;
+  padding-bottom: 0;
+  }
+  
+  .fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+  }
+  
+  .fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+  }
+  
+  .fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+  }
+  
+  .fakeMenu {
+  max-width: 748px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: left;
+  }
+  
+  .fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  max-width: 748px;
+  height: 467.50px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  }
+  
+  p {
+  position: relative;
+  left: 22%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 2.5em;
+  font-family: monospace;
+  white-space: normal;
+  overflow: hidden;
+  width: 0;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  /* TERMINAL WINDOW ------------------------------------------------ */
+
+  /* LAPTOP SYLE */
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 82.5%;
+  }
+  
+  
+  .laptop {
+  position: relative;
+  margin: auto;
+  max-width: 80rem;
+  
+  .laptop__screen {
+    position: relative;
+    z-index: 1;
+    padding: 3%;
+    border-radius: 2rem;
+    background: #ecf1f7;
+    background-image: linear-gradient(to bottom, #333, #111);
+    box-shadow: 0 .1rem 0 #cfcfcf;
+    border: 2px solid #ccc;
+    
+    -webkit-box-shadow:0px 0px 105px 30px rgba(119,171,156,0.55);
+    -moz-box-shadow: 0px 0px 105px 30px rgba(119,171,156,0.55);
+    box-shadow: 0px 0px 105px 30px rgba(119,171,156,0.55);
+
+  
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: attr(width) / attr(height);
+      background: #000;
+    }
+
+  }
+  
+  .laptop__bottom {
+    position: relative;
+    z-index: 1;
+    margin-right: -7%;
+    margin-left: -7%;
+    height: .7rem;
+    background: #e9eff5;
+    background-image: linear-gradient(to right, #d2dde9 0%, #f9fcff 15%, #e5ebf2 40%, #e5ebf2 60%, #f9fcff 85%, #d2dde9 100%);
+    
+    &::before {
+      display: block;
+      margin: 0 auto;
+      width: 20%;
+      height: .7rem;
+      border-radius: 0 0 .2rem .2rem;
+      background: #f6f9fc;
+      background-image: linear-gradient(to right, #c3cfdb 0%, #f6f9fc 10%, #f6f9fc 90%, #c3cfdb 100%);
+      content: " ";
+    }
+  }
+  
+  .laptop__under {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    display: block;
+    width: 50%;
+    height: 1.5rem;
+    background: #e2e8f0;
+    background-image: linear-gradient(to bottom, #e2e8f0, #bec7d1);
+  
+    &::after, &::before {
+      position: absolute;
+      top: 0%;
+      right: 100%;
+      bottom: 0;
+      display: block;
+      width: 50%;
+      border-bottom-left-radius: 100%;
+      background: inherit;
+      content: " ";
+    }
+  
+    &::after {
+      right: auto;
+      left: 100%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 0;
+    }
+  }
+  
+  .laptop__shadow {
+    position: absolute;
+    right: -10%;
+    bottom: -2.5rem;
+    left: -10%;
+    z-index: 0;
+    height: 2rem;
+    background: radial-gradient(ellipse closest-side,#000,transparent);
+    opacity: 0.5;
+  }
+  }
+  svg {
+  margin-left: 0;
+  width: 100%;
+  position: relative;
+  }
+  .bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background: url(https://i.imgur.com/g2aFOGP.png) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 10px rgba(255, 255, 255, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.3), -5px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 85vw;
+  height: 100vh;
+  position: fixed;
+  top: 2%;
+  left: 7%;
+  max-height: 600px;
+  overflow: hidden;
+  }
+
+/* LAPTOP SYLE 000000000000000000000000000000000000000000000000*/
+
+/* CLOUDS SYLE 000000000000000000000000000000000000000000000000*/
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+@-moz-keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+@keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+-webkit-animation: animateCloud 35s linear infinite;
+-moz-animation: animateCloud 35s linear infinite;
+animation: animateCloud 35s linear infinite;
+
+-webkit-transform: scale(0.65);
+-moz-transform: scale(0.65);
+transform: scale(0.65);
+}
+
+.x2 {
+-webkit-animation: animateCloud 20s linear infinite;
+-moz-animation: animateCloud 20s linear infinite;
+animation: animateCloud 20s linear infinite;
+
+-webkit-transform: scale(0.3);
+-moz-transform: scale(0.3);
+transform: scale(0.3);
+}
+
+.x3 {
+-webkit-animation: animateCloud 30s linear infinite;
+-moz-animation: animateCloud 30s linear infinite;
+animation: animateCloud 30s linear infinite;
+
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+transform: scale(0.5);
+}
+
+.x4 {
+-webkit-animation: animateCloud 18s linear infinite;
+-moz-animation: animateCloud 18s linear infinite;
+animation: animateCloud 18s linear infinite;
+
+-webkit-transform: scale(0.4);
+-moz-transform: scale(0.4);
+transform: scale(0.4);
+}
+
+.x5 {
+-webkit-animation: animateCloud 25s linear infinite;
+-moz-animation: animateCloud 25s linear infinite;
+animation: animateCloud 25s linear infinite;
+
+-webkit-transform: scale(0.55);
+-moz-transform: scale(0.55);
+transform: scale(0.55);
+}
+
+/* OBJECTS */
+
+.cloud {
+background: #fff;
+background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+
+-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+height: 120px;
+position: relative;
+width: 350px;
+}
+
+.cloud:after, .cloud:before {
+  background: #fff;
+content: '';
+position: absolute;
+z-indeX: -1;
+}
+
+.cloud:after {
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+
+height: 100px;
+left: 50px;
+top: -50px;
+width: 100px;
+}
+
+.cloud:before {
+-webkit-border-radius: 200px;
+-moz-border-radius: 200px;
+border-radius: 200px;
+
+width: 180px;
+height: 180px;
+right: 50px;
+top: -90px;
+}
+
+/* CLOUDS SYLE 000000000000000000000000000000000000000000000000*/
+
+    /* SUNRISE - SUNSET END ------------------------------------------- */
+
+
+    @keyframes sunrise {
+      from {
+        transform: rotate(-45deg);
+      }
+      
+      to {
+        transform: rotate(315deg);
+      }
+      }
+      
+      @keyframes moonrise {
+      from {
+        transform: rotate(0deg);
+      }
+      
+      to {
+        transform: rotate(180deg);
+      }
+      }
+      
+      @keyframes dawn {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 0;
+      }
+      }
+      
+      @keyframes noon {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 0;
+      }
+      }
+      
+      @keyframes dusk {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0;
+      }
+      }
+      
+      @keyframes midnight {
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 1;
+      }
+      }
+      
+      body {
+      --animation-speed: 1200s;
+      background-color: #000000;
+      
+      }
+      
+      body.pause {
+      --animation-speed: 0;
+      }
+      
+      .sky {
+      width: 85vw;
+      height: 100vh;
+      position: fixed;
+      top: 2%;
+      left: 7%;
+      max-height: 600px;
+      overflow: hidden;
+      }
+      
+      .sky__phase {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity 0.2s;
+      }
+      
+      .sky__dawn {
+      background: linear-gradient(
+        0deg,
+        rgba(254, 215, 102, 1) 0%,
+        rgba(205, 237, 246, 1) 100%
+      );
+      animation: linear dawn infinite var(--animation-speed);
+      }
+      
+      .sky__noon {
+      background: linear-gradient(
+        0deg,
+        rgba(205, 237, 246, 1) 0%,
+        rgba(36, 123, 160, 1) 100%
+      );
+      animation: linear noon infinite var(--animation-speed);
+      }
+      
+      .sky__dusk {
+      background: linear-gradient(
+        0deg,
+        rgba(255, 32, 110, 1) 0%,
+        rgba(10, 0, 94, 1) 100%
+      );
+      animation: linear dusk infinite var(--animation-speed);
+      }
+      
+      .sky__midnight {
+      background: linear-gradient(
+        0deg,
+        rgba(2, 0, 20, 1) 0%,
+        rgba(10, 0, 94, 1) 100%
+      );
+      animation: linear midnight infinite var(--animation-speed);
+      }
+      
+      .orbit {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 200px auto;
+      transform: rotate(-45deg);
+      animation: linear sunrise infinite var(--animation-speed);
+      }
+      
+      @media (min-width: 768px) {
+      .sky {
+        max-height: 600px;
+      }
+      .orbit {
+        width: 700px;
+        height: 700px;
+        margin: 150px auto;
+      }
+      }
+      
+      @media (min-width: 940px) {
+      .orbit {
+        width: 800px;
+        height: 800px;
+      }
+      }
+      
+      @media (min-width: 1200px) {
+      body {
+        --animation-speed: 1204s;
+      }
+      .orbit {
+        width: 1000px;
+        height: 1000px;
+        margin: 200px auto;
+      }
+      }
+      
+      @media (min-width: 1500px) {
+      body {
+        --animation-speed: 1206s;
+      }
+      .orbit {
+        width: 1300px;
+        height: 1300px;
+      }
+      }
+      
+      .sun {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      width: 80px;
+      height: 80px;
+      background-color: rgb(254, 215, 102);
+      border-radius: 50%;
+      box-shadow: 0 0 14px 14px rgba(254, 215, 102, 0.2);
+      }
+      
+      .moon {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #ebf3fe;
+      box-shadow: inset -40px 0px 0px #d8e8f7, inset 20px 0px 0px #ffffff, inset -50px 0px 0px 20px #e2eefa, 0px 0px 0px 20px  rgba(255, 255, 255, 0.05), 0px 0px 0px 40px  rgba(255, 255, 255, 0.025), 0px 0px 0px 60px  rgba(255, 255, 255, 0.0125);
+      transition: all 0.2s ease-in;
+      }
+      .moon:after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #d8e8f7;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      box-shadow: 40px -20px 0px -10px #d8e8f7, 40px 10px 0px -15px #d8e8f7;
+      }
+      
+      #sky__stars > div {
+      width: 3px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      }
+      
+      #toggle-animation {
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+      text-transform: uppercase;
+      background-color: rgb(2, 0, 20);
+      color: #fff;
+      border: 0;
+      padding: 0.5em 1em;
+      letter-spacing: 0.5px;
+      }
+      
+      #toggle-animation:hover {
+      background-color: rgb(61, 0, 21);
+      cursor: pointer;
+      }
+      
+      .paused {
+      display: none;
+      }
+      
+      .pause .paused {
+      display: block;
+      }
+      
+      .pause .playing {
+      display: none;
+      }
+      
+
+    /* SUNRISE - SUNSET END ------------------------------------------- */
