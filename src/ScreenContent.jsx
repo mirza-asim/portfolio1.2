@@ -90,18 +90,18 @@ function Contents () {
         <div className="container">
 
                 <div id="content">
-                    <span className="codeHead">user@sleepyCoderz~$&nbsp;</span>
-                    <span id='line1' className={state ? "hide" : stype}>
+                    <p className="codeHead">user@sleepyCoderz~$&nbsp;</p>
+                    <p id='line1' className={state ? "hide" : stype}>
                         sudo pip i mirza_Asim/portfolio
-                    </span><br></br>
-                    <span id='line2' className={state ? "typewriter" : "hide" }>
+                    </p><br></br>
+                    <p id='line2' className={state ? "typewriter" : "hide" }>
                         ..........!!!content downloaded!  
-                    </span>
-                    <span id='line3' className={state3 ? "typewriter" : "hide" }>
+                    </p>
+                    <p id='line3' className={state3 ? "typewriter" : "hide" }>
                         Select the commands to view -&#62; &nbsp;sudo cat&nbsp; <span className='bio' onClick={option1}>{BIO}&nbsp;</span><span className='work' onClick={option2}>{WORK}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
-                    </span>
+                    </p>
                     <br /><br />
-                    <span id='line4' className={state4 ? "linefour" : "hide" }>
+                    <p id='line4' className={state4 ? "linefour" : "hide" }>
                     Professional Summary <br />
                         $~	An experienced engineer with a Master’s degree in Electrical and Computer
                         Engineering, currently pursuing a Full-Stack Web/Cloud Development, AI/ML, 
@@ -120,11 +120,11 @@ function Contents () {
                         Prometheus, Grafana, InfluxDB, Netbox, Juniper Networks, Unity, CATIA v5, 
                         AutoCAD, Fusion 360, SolidWorks, Camlytics, Simatic Siemens S7 300, 
                         ServiceNow Administrators course.
-                    </span><br /><br />
-                    <span id='line5' className={state5 ? "typewriter1" : "hide" }>
+                    </p><br /><br />
+                    <p id='line5' className={state5 ? "typewriter1" : "hide" }>
                         $~: &nbsp;sudo cat&nbsp; <span className='work' onClick={option2}>{WORK}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
-                    </span>
-                    <span id='line6' className={state6 ? "linesix" : "hide" }>
+                    </p>
+                    <p id='line6' className={state6 ? "linesix" : "hide" }>
                     Work Experience<br /><br />
                         Security Intern, Bell, Mississauga ON  						             <br />    
                         #	Conducted research and built monitoring dashboards using Prometheus and 
@@ -156,11 +156,11 @@ function Contents () {
                         successfully establishing TCP socket communication between Python and Unity. Served 
                         as an audiovisual representative at the GITEX 2022 event, handling device 
                         maintenance and optimization.<br /><br />
-                    </span>
-                    <span id='line7' className={state7 ? "typewriter1" : "hide" }>
+                    </p>
+                    <p id='line7' className={state7 ? "typewriter1" : "hide" }>
                         $~: &nbsp;sudo cat&nbsp; <span className='bio' onClick={option1}>{BIO}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
-                    </span>
-                    <span id='line8' className={state8 ? "lineeight" : "hide" }>
+                    </p>
+                    <p id='line8' className={state8 ? "lineeight" : "hide" }>
                     Academic Projects<br /><br />
                         QoS Analysis across Tree, Ring, Half-Mesh, and Full-Mesh Network Technology | Winter 2024<br />		          
                         #	Conducted in-depth comparison of Quality of Service (QoS) metrics across 
@@ -177,10 +177,10 @@ function Contents () {
                         reliable detection systems for a healthier information ecosystem.<br />
                         #	Coordinated team members for this post-graduation project and successfully 
                         drafted the IEEE research paper.
-                    </span>
-                    <span id='line9' className={state9 ? "typewriter1" : "hide" }>
+                    </p>
+                    <p id='line9' className={state9 ? "typewriter1" : "hide" }>
                         $~: &nbsp;sudo cat&nbsp;<span className='bio' onClick={option1}>{BIO}&nbsp;</span> <span className='work' onClick={option2}>{WORK}&nbsp;</span>
-                    </span>
+                    </p>
                 </div>
                 
 

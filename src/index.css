@@ -9,15 +9,15 @@ footer {
   left: 1vh;
   bottom: 0;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 /* FOOTER------------------------------------------------ */
 
-span {
+p {
   color: #fff;
   font-family: monospace;
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   display: inline-flex;
 }
 a {
