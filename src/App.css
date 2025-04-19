@@ -1,6 +1,7 @@
 
 /* TERMINAL WINDOW ------------------------------------------------ */
 
+
 /* CONTENT ----------------------------------- */
 
 .codeHead {
@@ -14,6 +15,7 @@
   width: fit-content;
 }
 .typewriter {
+  width: fit-content;
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */

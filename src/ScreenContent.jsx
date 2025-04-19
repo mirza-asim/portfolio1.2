@@ -20,7 +20,6 @@ function Contents () {
 
     function option1() {
         setTimeout(() => {
-            //setState3(false);
             setState4(true);
             setState5(true);
             setState6(false);
@@ -99,7 +98,7 @@ function Contents () {
                         ..........!!!content downloaded!  
                     </span>
                     <span id='line3' className={state3 ? "typewriter" : "hide" }>
-                        Select the commands to view -&#62; &nbsp;sudo cat&nbsp; <div className='bio' onClick={option1}>{BIO}&nbsp;</div><div className='work' onClick={option2}>{WORK}&nbsp;</div><div className='projects' onClick={option3}>{PROJECTS}&nbsp;</div>
+                        Select the commands to view -&#62; &nbsp;sudo cat&nbsp; <span className='bio' onClick={option1}>{BIO}&nbsp;</span><span className='work' onClick={option2}>{WORK}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
                     </span>
                     <br /><br />
                     <span id='line4' className={state4 ? "linefour" : "hide" }>
@@ -123,7 +122,7 @@ function Contents () {
                         ServiceNow Administrators course.
                     </span><br /><br />
                     <span id='line5' className={state5 ? "typewriter1" : "hide" }>
-                        $~: &nbsp;sudo cat&nbsp; <div className='work' onClick={option2}>{WORK}&nbsp;</div><div className='projects' onClick={option3}>{PROJECTS}&nbsp;</div>
+                        $~: &nbsp;sudo cat&nbsp; <span className='work' onClick={option2}>{WORK}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
                     </span>
                     <span id='line6' className={state6 ? "linesix" : "hide" }>
                     Work Experience<br /><br />
@@ -159,7 +158,7 @@ function Contents () {
                         maintenance and optimization.<br /><br />
                     </span>
                     <span id='line7' className={state7 ? "typewriter1" : "hide" }>
-                        $~: &nbsp;sudo cat&nbsp; <div className='bio' onClick={option1}>{BIO}&nbsp;</div><div className='projects' onClick={option3}>{PROJECTS}&nbsp;</div>
+                        $~: &nbsp;sudo cat&nbsp; <span className='bio' onClick={option1}>{BIO}&nbsp;</span><span className='projects' onClick={option3}>{PROJECTS}&nbsp;</span>
                     </span>
                     <span id='line8' className={state8 ? "lineeight" : "hide" }>
                     Academic Projects<br /><br />
@@ -180,7 +179,7 @@ function Contents () {
                         drafted the IEEE research paper.
                     </span>
                     <span id='line9' className={state9 ? "typewriter1" : "hide" }>
-                        $~: &nbsp;sudo cat&nbsp;<div className='bio' onClick={option1}>{BIO}&nbsp;</div> <div className='work' onClick={option2}>{WORK}&nbsp;</div>
+                        $~: &nbsp;sudo cat&nbsp;<span className='bio' onClick={option1}>{BIO}&nbsp;</span> <span className='work' onClick={option2}>{WORK}&nbsp;</span>
                     </span>
                 </div>
                 
