@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function Contents () {
@@ -64,21 +64,25 @@ function Contents () {
             console.log("animation ended2");
         }, 2000);
     }
-    const lineOne = document.getElementById("line1");
-    const lineTwo = document.getElementById("line2");
-    const lineThree = document.getElementById("line3");
-    if (lineOne) {
-        lineOne.addEventListener("animationend", nextLine1);
-    }
-    if (lineTwo) {
-        lineTwo.addEventListener("animationend", nextLine2);
-    }
-    
-    window.onload = () => {
-        setTyping("typewriter");
-        console.log("applied");
-    }
 
+    const lineThree = document.getElementById("line3");
+    useEffect(() => {
+        const lineOne = document.getElementById('line1');
+        const lineTwo = document.getElementById('line2');
+        const lineThree = document.getElementById("line3");
+    
+        if (lineOne) lineOne.addEventListener('animationend', nextLine1);
+        if (lineTwo) lineTwo.addEventListener('animationend', nextLine2);
+    
+        setTyping('typewriter');
+        console.log('applied');
+    
+        // 🧹 Clean up listeners on unmount
+        return () => {
+          if (lineOne) lineOne.removeEventListener('animationend', nextLine1);
+          if (lineTwo) lineTwo.removeEventListener('animationend', nextLine2);
+        };
+      }, []);
     return (
         <div className="container">
 
