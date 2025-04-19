@@ -23,7 +23,9 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-
+  -webkit-animation: 
+    typing 2.5s steps(35, end),
+    blink-caret .9s step-end infinite;
   animation: 
     typing 2.5s steps(35, end),
     blink-caret .9s step-end infinite;
@@ -37,7 +39,9 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-
+  -webkit-animation: 
+    typingOne 1s steps(60, end),
+    blink-caret .9s step-end infinite;
   animation: 
     typingOne 1s steps(60, end),
     blink-caret .9s step-end infinite;
@@ -52,20 +56,29 @@
   color: rgb(0, 229, 255);
 }
 /* The typing effect */
-
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 50% }
 }
 /* The typing1 effect */
-
+@-webkit-keyframes typingOne {
+  from { width: 0 }
+  to { width: 20% }
+}
 @keyframes typingOne {
   from { width: 0 }
   to { width: 20% }
 }
 
 /* The typewriter cursor effect */
-
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 208, 255) }
+}
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(0, 208, 255) }
