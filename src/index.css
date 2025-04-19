@@ -9,7 +9,7 @@ footer {
   left: 1vh;
   bottom: 0;
   width: 100%;
-  font-size: 1.1vw;
+  font-size: 1.5em;
 }
 /* FOOTER------------------------------------------------ */
 
@@ -17,7 +17,7 @@ p {
   color: #fff;
   font-family: monospace;
   text-align: left;
-  font-size: 1.1vw;
+  font-size: 1.5em;
   display: inline-flex;
 }
 a {

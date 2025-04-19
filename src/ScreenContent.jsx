@@ -19,17 +19,14 @@ function Contents () {
     const [state9, setState9] = useState(false);
 
     function option1() {
-        setTimeout(() => {
-            setState4(true);
-            setState5(true);
-            setState6(false);
-            setState7(false);
-            setState8(false);
-            setState9(false);
-            lineThree.classList.remove("typewriter");
-
-        }, 500);
-        
+        setState4(true);
+        setState5(true);
+        setState6(false);
+        setState7(false);
+        setState8(false);
+        setState9(false);
+        lineThree.classList.remove("typewriter");
+    
     }
     function option2() {
         setState4(false);
@@ -49,10 +46,6 @@ function Contents () {
         setState8(true);
         setState9(true);
         lineThree.classList.remove("typewriter");
-    }
-    function fullScreen() {
-        var el = document.getElementById('fake__Screen');
-        el.requestFullscreen();
     }
 
     //////////////////////////////////** OPTION SELECTION **///////////////////////////////////////
